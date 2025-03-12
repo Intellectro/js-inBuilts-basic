@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Custom response api</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .container {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                /* align-items: center; */
+                row-gap: 2rem;
+                padding-left: 4%;
+            }
+
+            .container * {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .title {
+                font-size: 32px;
+                font-weight: bold;
+            }
+
+            .res-con {
+                list-style: none;
+            }
+
+            .qs-con {
+                display: grid;
+                row-gap: 14px;
+            }
+            span {
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">CREATING A CUSTOM RESPONSE API</div>
+            <ul class="res-con">
+                <li class="qs-con">
+                    <span>Why do you we need custom response</span>
+                    <ul>
+                        <li class="ans">
+                            Help transfer generated files to the cache api
+                        </li>
+                        <li class="ans">
+                            Store user's local files in the browsers cache
+                        </li>
+                        <li class="ans">Make copy of those store files</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <script src="./response.js"></script>
+    </body>
+</html>

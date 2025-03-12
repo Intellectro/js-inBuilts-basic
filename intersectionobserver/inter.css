@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+    width: 60%;
+}
+
+.title {
+    align-self: center;
+    font-size: 38px;
+}
+
+.card {
+    width: 130px;
+    padding: 10px;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 4px black;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.show {
+    opacity: 1;
+}

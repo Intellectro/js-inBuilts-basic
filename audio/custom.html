@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AUDIO CONTEXT</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .container {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .audio-container {
+                width: 60%;
+                height: 80px;
+                background-color: black;
+                display: flex;
+                align-items: center;
+                padding: 0 6px;
+            }
+
+            .audio-container > audio {
+                width: 100%;
+            }
+
+            .audio-analyser {
+                width: 60%;
+                height: 40px;
+                box-shadow: inset 0px -2px 4px rgba(0, 0, 0, 0.5);
+                padding: 0 6px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="audio-container"></div>
+            <canvas class="audio-analyser"></canv>
+        </div>
+        <script src="./custom.js"></script>
+    </body>
+</html>

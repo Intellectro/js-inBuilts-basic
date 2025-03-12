@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CLIPBOARD API</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .container {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+            }
+
+            .container * {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            header {
+                align-self: center;
+            }
+
+            .contents-container {
+                display: flex;
+                flex-direction: column;
+                row-gap: 14px;
+                text-align: justify;
+            }
+            .output-container {
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+            }
+            .output {
+                font-size: 19px;
+                padding: 10px;
+                font-weight: bold;
+            }
+
+            [contenteditable] span {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>COPY AND PASTE API</h1>
+            </header>
+            <div class="contents-container">
+                <p class="first paragh">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Reprehenderit impedit ad necessitatibus, saepe in quod. Sit
+                    amet aliquid maxime et? Voluptatem tenetur porro, sapiente
+                    aperiam eius, excepturi nemo illum impedit amet veniam
+                    ratione quasi vero doloremque asperiores ex, ipsa unde.
+                    Alias ducimus harum dolore sequi, inventore illo, mollitia
+                    voluptate modi ex blanditiis veritatis consequuntur quidem
+                    nobis consectetur ea commodi officia. Incidunt, repellat sit
+                    delectus cum error neque, beatae praesentium vel natus
+                    dolorum dolor nulla illum in aliquid tempora odit accusamus
+                    iusto recusandae laudantium fuga minima! Architecto
+                    blanditiis voluptates molestiae? Impedit, aspernatur.
+                    Ducimus quos, sed voluptatem, quia facilis expedita autem,
+                    est veritatis illo placeat corrupti adipisci ipsa et.
+                    Provident, error vel minus impedit ab repellat magnam quae
+                    odio iure quisquam quod aperiam laboriosam incidunt delectus
+                    velit eos ipsam fugiat! Cupiditate, modi!
+                </p>
+                <p class="second paragh">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Sit necessitatibus explicabo eius doloribus in aspernatur
+                    eos assumenda reiciendis ducimus magni vero velit
+                    dignissimos corporis esse, sequi optio rem sint eum nam
+                    totam qui eligendi obcaecati saepe et! Commodi excepturi
+                    dicta ducimus adipisci perferendis eaque ipsam doloremque
+                    dignissimos natus modi eligendi sequi, nesciunt dolorum?
+                    Amet, ad aliquam accusantium, asperiores nisi, repudiandae
+                    autem illo molestiae iste officia ut! Expedita laboriosam
+                    nobis ducimus voluptatem deleniti quod illum nam sequi cum
+                    quis explicabo animi ratione maxime in nostrum ipsam, soluta
+                    nihil, at ea ex molestiae labore aut iusto recusandae? Ipsa,
+                    accusamus voluptates. Dolores quae omnis quam expedita odio
+                    et, sunt maiores esse molestias, labore deleniti commodi.
+                    Facilis sapiente asperiores voluptates, in consectetur
+                    fugit! Aut id numquam corporis repudiandae molestiae
+                    deleniti dolorum quos maiores repellat quia voluptate,
+                    perspiciatis, ea quasi? Quaerat provident amet et maxime.
+                </p>
+                <p class="third paragh">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi cum itaque aut consequatur magni repudiandae ratione
+                    doloremque tempora ex necessitatibus quasi praesentium ullam
+                    nam neque quos quisquam vero harum ipsa perferendis
+                    laboriosam quaerat, ipsum nihil! Nesciunt animi laudantium
+                    iusto cupiditate, tenetur amet hic quod fugit ad nulla
+                    dolorem natus, est obcaecati tempore id provident
+                    repudiandae veritatis sit qui. Expedita, blanditiis.
+                    Exercitationem molestias, earum, recusandae veniam
+                    voluptatibus dolores iusto reiciendis repellendus ipsa
+                    libero, inventore corporis voluptatem facilis explicabo
+                    minima optio nesciunt? Doloribus maiores, iusto fugiat
+                    beatae expedita incidunt veniam sunt, tempore debitis autem
+                    placeat sequi perspiciatis porro a pariatur illum ducimus
+                    voluptatum deserunt! Praesentium animi beatae labore dolorem
+                    harum, officia sed ea, nulla veritatis ab neque. Ea cum
+                    voluptates est rem mollitia tenetur similique doloribus
+                    sequi officia atque culpa modi, autem maiores numquam
+                    officiis excepturi amet pariatur, possimus, fugit iusto!
+                    Totam excepturi tempore consequatur sunt ea ipsam voluptates
+                    quam odio ullam!
+                </p>
+            </div>
+            <div class="output-container">
+                <div class="output one" contenteditable="true">
+                    Paste your copied text here
+                </div>
+                <div class="output two" contenteditable="true">
+                    Or here if possible
+                </div>
+            </div>
+        </div>
+        <script src="./clipboard.js"></script>
+    </body>
+</html>

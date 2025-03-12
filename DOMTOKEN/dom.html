@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="gibberish data" href="app.js" id="linkup" />
+        <title>DOM-TOKEN-LIST</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                width: 100vw;
+                height: 100vh;
+            }
+
+            .container {
+                margin: auto;
+                width: 60%;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                display: grid;
+                row-gap: 16px;
+            }
+
+            .title {
+                text-align: center;
+                font-size: 43px;
+            }
+
+            form {
+                display: grid;
+                row-gap: 8px;
+            }
+
+            input {
+                padding: 6px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">DOMToken List</div>
+            <p class="lorem dummy text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+                fugiat nulla molestiae neque qui, omnis iste illum officia nemo
+                quam beatae tempore sit, minus voluptatibus error dolore veniam
+                facilis fuga reprehenderit voluptate! Ducimus numquam odit
+                dolorum quia architecto eaque ex, molestiae natus temporibus
+                sequi quam quas molestias aperiam saepe illum!
+            </p>
+            <form action="#">
+                <label for="nm">Name:</label>
+                <input type="text" class="textform" />
+                <label for="em">Email:</label>
+                <input type="email" class="email" />
+            </form>
+            <p class="text-out">
+                Profile: <output for="nm em" class="output"></output>
+            </p>
+        </div>
+        <script src="./dom.js"></script>
+    </body>
+</html>

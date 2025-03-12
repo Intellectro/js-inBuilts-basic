@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Service worker API</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .container {
+                width: 100vw;
+                height: 100vh;
+                padding-left: 4%;
+            }
+
+            .container * {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .title {
+                font-size: 35px;
+            }
+            .btn-container {
+                margin-top: 15px;
+            }
+            .btn {
+                padding: 8px 12px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            input {
+                width: 270px;
+                margin-top: 10px;
+                padding: 6px 10px;
+            }
+
+            .output {
+                font-size: 18px;
+                margin-top: 13px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">CLIENT WORKER MESSAGING API</div>
+            <input type="text" id="msg" />
+            <div class="btn-container">
+                <button class="open-btn btn">OPEN TAB</button>
+                <button class="send-btn btn">
+                    SEND MESSAGE THROUGH SERVICEWORKER API
+                </button>
+            </div>
+            <div class="output"></div>
+        </div>
+        <script src="./service.js"></script>
+    </body>
+</html>

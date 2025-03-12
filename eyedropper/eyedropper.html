@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eyedropper in Javascript</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .container {
+                width: 100vw;
+                min-height: 100vh;
+                padding: 0 4%;
+            }
+
+            .content-container {
+                display: flex;
+                flex-direction: column;
+                row-gap: 15px;
+            }
+
+            .title {
+                font-size: 32px;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .nav {
+                display: flex;
+                column-gap: 10px;
+                align-items: center;
+            }
+
+            .picker {
+                min-width: 170px;
+                padding: 7px 12px;
+                font-weight: bold;
+                background-color: crimson;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            .content-container * {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .result {
+                align-self: flex-start;
+                width: auto;
+                height: auto;
+                padding: 7px 12px;
+                text-align: center;
+                letter-spacing: 1px;
+                font-weight: bold;
+                box-shadow: inset 0px -2px 4px rgba(0, 0, 0, 0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content-container">
+                <div class="title">EYEDROPPER API</div>
+                <div class="nav">
+                    <button class="picker">CLICK TO PICK A COLOR</button>
+                    <span>Hitting the escape key will abort the action</span>
+                </div>
+                <img
+                    src="./pexels-photo-11643390.jpeg"
+                    alt="#"
+                    width="350px"
+                    height="320px" />
+            </div>
+        </div>
+        <script src="./eyedropper.js"></script>
+    </body>
+</html>

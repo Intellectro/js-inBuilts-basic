@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./speech.css" />
+        <script src="./speech.js" type="module"></script>
+        <title>Speech Synthesis</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content-title">
+                SpeechSynthesis &amp; SpeechSynthesisUtterances
+            </div>
+            <div class="sentences">
+                <input
+                    type="text"
+                    value="This is just a test for the speech synthesis, First day on the beat" />
+                <input
+                    type="text"
+                    value="Just another test by the test input" />
+            </div>
+
+            <div class="buttons">
+                <button id="btnRead">Read</button>
+                <button id="btnPause">Pause</button>
+                <button id="btnResume">Resume</button>
+            </div>
+
+            <div class="controls">
+                <p>
+                    <label for="voiceSelect">Voice List</label>
+                    <select name="voiceSelect" id="voiceSelect"></select>
+                </p>
+                <p>
+                    <label for="pitch">Pitch (0 - 2)</label>
+                    <input
+                        type="range"
+                        id="pitch"
+                        min="0"
+                        max="2"
+                        value="1"
+                        step="0.1" />
+                    <span id="pitch-value">1</span>
+                </p>
+                <p>
+                    <label for="rate">Rate (0 - 10)</label>
+                    <input
+                        type="range"
+                        id="rate"
+                        min="0"
+                        max="10"
+                        value="1"
+                        step="1" />
+                    <span id="rate-value">1</span>
+                </p>
+                <p>
+                    <label for="volume">Volume (0 - 1)</label>
+                    <input
+                        type="range"
+                        id="volume"
+                        min="0"
+                        max="1"
+                        value="0.5"
+                        step="0.1" />
+                    <span id="volume-value">0.5</span>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+console.log('Navigator cookie enabled ' + navigator.cookieEnabled);
+console.log('Navigator user agent ' + navigator.userAgent);
+console.log('Navigator language ' + navigator.language);
+console.log('Navigator browser online ' + navigator.onLine);
+console.log('Navigator application name ' + navigator.appName);
+console.log('Navigator application code name ' + navigator.appCodeName);
+console.log('Navigator application name ' + navigator.appCodeName);
+console.log('Navigator product name ' + navigator.product);
+console.log('Navigator appVersion ' + navigator.appVersion);
+console.log('Navigator platform ' + navigator.platform);
+console.log('Navigator java enabled ' + navigator.javaEnabled);
